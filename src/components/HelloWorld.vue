@@ -6,6 +6,7 @@
         placeholder="example https://www.google.com"
         label="QR code"
         outlined
+        @keyup.enter="scancode(code)"
       ></v-text-field>
 
       <div class="btn mt-14 mx-auto" v-if="alltag.length < 10">
